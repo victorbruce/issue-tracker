@@ -22,14 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-        <AuthProvider>
-          <Theme appearance="light" accentColor="purple">
+        <Theme appearance="light" accentColor="purple">
+          <AuthProvider>
             <NavBar />
             <main className="p-5">
               <Container>{children}</Container>
             </main>
-          </Theme>
-        </AuthProvider>
+          </AuthProvider>
+        </Theme>
       </body>
     </html>
   );
