@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import IssueFormSkeleton from "./loading";
 
-const IssueForm = dynamic(() => import("../../_component/IssueForm"), {
+const IssueForm = dynamic(() => import("@/app/issues/_component/IssueForm"), {
   ssr: false,
   loading: () => <IssueFormSkeleton />,
 });
